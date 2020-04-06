@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# LED_Column
+#
+DEF LED_Column COL 0 40 Y Y 1 F N
+F0 "COL" 0 0 50 H V C CNN
+F1 "LED_Column" 0 0 50 H V C CNN
+F2 "BaseBoard:LED_Column" 0 0 50 H I C CNN
+F3 "" -300 -50 50 H I C CNN
+DRAW
+S 150 -150 -150 200 0 1 0 f
+X RED 1 -100 -250 100 U 50 50 1 1 I
+X GREEN 2 0 -250 100 U 50 50 1 1 I
+X BLUE 3 100 -250 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

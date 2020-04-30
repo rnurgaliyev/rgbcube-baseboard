@@ -4,4 +4,10 @@ $CMP ESP32_NodeMCU
 F https://cdn.shopify.com/s/files/1/1509/1638/files/ESP_-_32_NodeMCU_Developmentboard_Datenblatt_a3bf98d8-6a53-4d26-8f1c-c61b1c82af39.pdf?76837
 $ENDCMP
 #
+$CMP TLC59711PWPR_Reordered
+D IC LED DRIVER LIN 60MA 20HTSSOP
+K 296-36745-1-ND
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc59711
+$ENDCMP
+#
 #End Doc Library

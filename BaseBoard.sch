@@ -19,156 +19,13 @@ U 1 1 619D1244
 P 3450 2650
 F 0 "ANOD1" V 3438 2172 50  0000 R CNN
 F 1 "Anodes" V 3347 2172 50  0000 R CNN
-F 2 "" H 3300 3000 50  0001 C CNN
+F 2 "BaseBoard:Anodes" H 3300 3000 50  0001 C CNN
 F 3 "" H 3300 3000 50  0001 C CNN
 	1    3450 2650
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4850 4250 4850 4150
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q16
-U 1 1 5F21DEAC
-P 5950 3600
-F 0 "Q16" H 6138 3653 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 3547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 3800 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 3900 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 4000 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 4100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 4200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 4300 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 4400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 4600 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 4700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 4800 60  0001 L CNN "Status"
-	1    5950 3600
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:VCC #PWR019
-U 1 1 5F21DE97
-P 4850 3500
-F 0 "#PWR019" H 4850 3350 50  0001 C CNN
-F 1 "VCC" H 4867 3673 50  0000 C CNN
-F 2 "" H 4850 3500 50  0001 C CNN
-F 3 "" H 4850 3500 50  0001 C CNN
-	1    4850 3500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5F21DE8A
-P 6300 3850
-F 0 "#PWR020" H 6300 3600 50  0001 C CNN
-F 1 "GND" H 6305 3677 50  0000 C CNN
-F 2 "" H 6300 3850 50  0001 C CNN
-F 3 "" H 6300 3850 50  0001 C CNN
-	1    6300 3850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q15
-U 1 1 5F21DE84
-P 4850 3950
-F 0 "Q15" H 4958 4003 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 3897 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 4150 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 4250 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 4350 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 4450 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 4550 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 4650 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 4750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 4850 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 4950 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 5050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 5150 60  0001 L CNN "Status"
-	1    4850 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4850 3500 4850 3550
-$Comp
-L Device:R R2
-U 1 1 5F15D9F6
-P 5300 3550
-F 0 "R2" V 5093 3550 50  0000 C CNN
-F 1 "1K" V 5184 3550 50  0000 C CNN
-F 2 "" V 5230 3550 50  0001 C CNN
-F 3 "~" H 5300 3550 50  0001 C CNN
-	1    5300 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4850 3550 5150 3550
-Connection ~ 4850 3550
-Wire Wire Line
-	4850 3550 4850 3750
-$Comp
-L Device:R R3
-U 1 1 5F1978E3
-P 5300 3850
-F 0 "R3" V 5093 3850 50  0000 C CNN
-F 1 "10" V 5184 3850 50  0000 C CNN
-F 2 "" V 5230 3850 50  0001 C CNN
-F 3 "~" H 5300 3850 50  0001 C CNN
-	1    5300 3850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 3850 5600 3850
-Wire Wire Line
-	5450 3550 5600 3550
-$Comp
-L Device:R R1
-U 1 1 5F736B11
-P 6200 3300
-F 0 "R1" V 5993 3300 50  0000 C CNN
-F 1 "1K" V 6084 3300 50  0000 C CNN
-F 2 "" V 6130 3300 50  0001 C CNN
-F 3 "~" H 6200 3300 50  0001 C CNN
-	1    6200 3300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5950 3400 5950 3300
-Wire Wire Line
-	5950 3300 6050 3300
-Wire Wire Line
-	6300 3700 6300 3850
-Wire Wire Line
-	6150 3700 6300 3700
-Wire Wire Line
-	5600 3550 5600 3700
-Wire Wire Line
-	5600 3700 5750 3700
-Connection ~ 5600 3700
-Wire Wire Line
-	5600 3700 5600 3850
-Wire Wire Line
 	4850 5750 4850 5650
-$Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q1
-U 1 1 5FD989EE
-P 5950 5100
-F 0 "Q1" H 6138 5153 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 5047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 5300 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 5400 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 5500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 5600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 5700 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 5800 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 5900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 6000 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 6100 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 6200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 6300 60  0001 L CNN "Status"
-	1    5950 5100
-	0    -1   1    0   
-$EndComp
 $Comp
 L power:VCC #PWR01
 U 1 1 5FD989F4
@@ -191,26 +48,6 @@ F 3 "" H 6300 5350 50  0001 C CNN
 	1    6300 5350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q2
-U 1 1 5FD98A09
-P 4850 5450
-F 0 "Q2" H 4958 5503 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 5397 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 5650 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 5750 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 5850 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 5950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 6050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 6150 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 6250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 6350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 6450 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 6550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 6650 60  0001 L CNN "Status"
-	1    4850 5450
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4850 5000 4850 5050
 $Comp
@@ -219,7 +56,7 @@ U 1 1 5FD98A10
 P 5300 5050
 F 0 "R5" V 5093 5050 50  0000 C CNN
 F 1 "1K" V 5184 5050 50  0000 C CNN
-F 2 "" V 5230 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 5050 50  0001 C CNN
 F 3 "~" H 5300 5050 50  0001 C CNN
 	1    5300 5050
 	0    1    1    0   
@@ -235,7 +72,7 @@ U 1 1 5FD98A19
 P 5300 5350
 F 0 "R6" V 5093 5350 50  0000 C CNN
 F 1 "10" V 5184 5350 50  0000 C CNN
-F 2 "" V 5230 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 5350 50  0001 C CNN
 F 3 "~" H 5300 5350 50  0001 C CNN
 	1    5300 5350
 	0    1    1    0   
@@ -250,7 +87,7 @@ U 1 1 5FD98A21
 P 6200 4800
 F 0 "R4" V 5993 4800 50  0000 C CNN
 F 1 "1K" V 6084 4800 50  0000 C CNN
-F 2 "" V 6130 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4800 50  0001 C CNN
 F 3 "~" H 6200 4800 50  0001 C CNN
 	1    6200 4800
 	0    1    1    0   
@@ -275,21 +112,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q3
 U 1 1 5FDC4341
-P 5950 6600
-F 0 "Q3" H 6138 6653 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 6547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 6800 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 6900 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 7000 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 7100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 7200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 7300 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 7400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 7500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 7600 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 7700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 7800 60  0001 L CNN "Status"
-	1    5950 6600
+P 5950 5100
+F 0 "Q3" H 6138 5153 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 5047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 5300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 5400 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 5500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 5600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 5700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 5800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 5900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 6000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 6100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 6200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 6300 60  0001 L CNN "Status"
+	1    5950 5100
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -317,21 +154,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q4
 U 1 1 5FDC435C
-P 4850 6950
-F 0 "Q4" H 4958 7003 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 6897 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 7150 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 7250 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 7350 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 7450 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 7550 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 7650 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 7750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 7850 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 7950 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 8050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 8150 60  0001 L CNN "Status"
-	1    4850 6950
+P 4850 5450
+F 0 "Q4" H 4958 5503 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 5397 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 5650 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 5750 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 5850 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 5950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 6050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 6150 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 6250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 6350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 6450 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 6550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 6650 60  0001 L CNN "Status"
+	1    4850 5450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -342,7 +179,7 @@ U 1 1 5FDC4363
 P 5300 6550
 F 0 "R8" V 5093 6550 50  0000 C CNN
 F 1 "1K" V 5184 6550 50  0000 C CNN
-F 2 "" V 5230 6550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 6550 50  0001 C CNN
 F 3 "~" H 5300 6550 50  0001 C CNN
 	1    5300 6550
 	0    1    1    0   
@@ -358,7 +195,7 @@ U 1 1 5FDC436C
 P 5300 6850
 F 0 "R9" V 5093 6850 50  0000 C CNN
 F 1 "10" V 5184 6850 50  0000 C CNN
-F 2 "" V 5230 6850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 6850 50  0001 C CNN
 F 3 "~" H 5300 6850 50  0001 C CNN
 	1    5300 6850
 	0    1    1    0   
@@ -373,7 +210,7 @@ U 1 1 5FDC4374
 P 6200 6300
 F 0 "R7" V 5993 6300 50  0000 C CNN
 F 1 "1K" V 6084 6300 50  0000 C CNN
-F 2 "" V 6130 6300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 6300 50  0001 C CNN
 F 3 "~" H 6200 6300 50  0001 C CNN
 	1    6200 6300
 	0    1    1    0   
@@ -398,21 +235,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q5
 U 1 1 5FDF1C5D
-P 5950 8100
-F 0 "Q5" H 6138 8153 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 8047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 8300 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 8400 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 8500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 8600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 8700 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 8800 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 8900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 9000 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 9100 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 9200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 9300 60  0001 L CNN "Status"
-	1    5950 8100
+P 5950 6600
+F 0 "Q5" H 6138 6653 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 6547 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 6800 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 6900 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 7000 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 7100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 7200 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 7300 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 7400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 7500 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 7600 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 7700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 7800 60  0001 L CNN "Status"
+	1    5950 6600
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -440,21 +277,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q6
 U 1 1 5FDF1C78
-P 4850 8450
-F 0 "Q6" H 4958 8503 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 8397 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 8650 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 8750 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 8850 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 8950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 9050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 9150 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 9250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 9350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 9450 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 9550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 9650 60  0001 L CNN "Status"
-	1    4850 8450
+P 4850 6950
+F 0 "Q6" H 4958 7003 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 6897 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 7150 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 7250 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 7350 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 7450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 7550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 7650 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 7750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 7850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 7950 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 8050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 8150 60  0001 L CNN "Status"
+	1    4850 6950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -465,7 +302,7 @@ U 1 1 5FDF1C7F
 P 5300 8050
 F 0 "R11" V 5093 8050 50  0000 C CNN
 F 1 "1K" V 5184 8050 50  0000 C CNN
-F 2 "" V 5230 8050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 8050 50  0001 C CNN
 F 3 "~" H 5300 8050 50  0001 C CNN
 	1    5300 8050
 	0    1    1    0   
@@ -481,7 +318,7 @@ U 1 1 5FDF1C88
 P 5300 8350
 F 0 "R12" V 5093 8350 50  0000 C CNN
 F 1 "10" V 5184 8350 50  0000 C CNN
-F 2 "" V 5230 8350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 8350 50  0001 C CNN
 F 3 "~" H 5300 8350 50  0001 C CNN
 	1    5300 8350
 	0    1    1    0   
@@ -496,7 +333,7 @@ U 1 1 5FDF1C90
 P 6200 7800
 F 0 "R10" V 5993 7800 50  0000 C CNN
 F 1 "1K" V 6084 7800 50  0000 C CNN
-F 2 "" V 6130 7800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 7800 50  0001 C CNN
 F 3 "~" H 6200 7800 50  0001 C CNN
 	1    6200 7800
 	0    1    1    0   
@@ -521,21 +358,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q7
 U 1 1 5FE247CD
-P 5950 9600
-F 0 "Q7" H 6138 9653 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 9547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 9800 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 9900 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 10000 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 10100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 10200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 10300 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 10400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 10500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 10600 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 10700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 10800 60  0001 L CNN "Status"
-	1    5950 9600
+P 5950 8100
+F 0 "Q7" H 6138 8153 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 8047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 8300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 8400 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 8500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 8600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 8700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 8800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 8900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 9000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 9100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 9200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 9300 60  0001 L CNN "Status"
+	1    5950 8100
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -563,21 +400,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q8
 U 1 1 5FE247E8
-P 4850 9950
-F 0 "Q8" H 4958 10003 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 9897 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 10150 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 10250 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 10350 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 10450 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 10550 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 10650 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 10750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 10850 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 10950 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 11050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 11150 60  0001 L CNN "Status"
-	1    4850 9950
+P 4850 8450
+F 0 "Q8" H 4958 8503 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 8397 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 8650 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 8750 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 8850 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 8950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 9050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 9150 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 9250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 9350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 9450 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 9550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 9650 60  0001 L CNN "Status"
+	1    4850 8450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -588,7 +425,7 @@ U 1 1 5FE247EF
 P 5300 9550
 F 0 "R14" V 5093 9550 50  0000 C CNN
 F 1 "1K" V 5184 9550 50  0000 C CNN
-F 2 "" V 5230 9550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 9550 50  0001 C CNN
 F 3 "~" H 5300 9550 50  0001 C CNN
 	1    5300 9550
 	0    1    1    0   
@@ -604,7 +441,7 @@ U 1 1 5FE247F8
 P 5300 9850
 F 0 "R15" V 5093 9850 50  0000 C CNN
 F 1 "10" V 5184 9850 50  0000 C CNN
-F 2 "" V 5230 9850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 9850 50  0001 C CNN
 F 3 "~" H 5300 9850 50  0001 C CNN
 	1    5300 9850
 	0    1    1    0   
@@ -619,7 +456,7 @@ U 1 1 5FE24800
 P 6200 9300
 F 0 "R13" V 5993 9300 50  0000 C CNN
 F 1 "1K" V 6084 9300 50  0000 C CNN
-F 2 "" V 6130 9300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 9300 50  0001 C CNN
 F 3 "~" H 6200 9300 50  0001 C CNN
 	1    6200 9300
 	0    1    1    0   
@@ -644,21 +481,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q9
 U 1 1 5FE9A531
-P 5950 11100
-F 0 "Q9" H 6138 11153 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 11047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 11300 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 11400 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 11500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 11600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 11700 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 11800 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 11900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 12000 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 12100 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 12200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 12300 60  0001 L CNN "Status"
-	1    5950 11100
+P 5950 9600
+F 0 "Q9" H 6138 9653 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 9547 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 9800 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 9900 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 10000 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 10100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 10200 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 10300 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 10400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 10500 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 10600 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 10700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 10800 60  0001 L CNN "Status"
+	1    5950 9600
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -686,21 +523,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q10
 U 1 1 5FE9A54C
-P 4850 11450
-F 0 "Q10" H 4958 11503 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 11397 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 11650 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 11750 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 11850 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 11950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 12050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 12150 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 12250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 12350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 12450 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 12550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 12650 60  0001 L CNN "Status"
-	1    4850 11450
+P 4850 9950
+F 0 "Q10" H 4958 10003 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 9897 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 10150 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 10250 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 10350 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 10450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 10550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 10650 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 10750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 10850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 10950 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 11050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 11150 60  0001 L CNN "Status"
+	1    4850 9950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -711,7 +548,7 @@ U 1 1 5FE9A553
 P 5300 11050
 F 0 "R17" V 5093 11050 50  0000 C CNN
 F 1 "1K" V 5184 11050 50  0000 C CNN
-F 2 "" V 5230 11050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 11050 50  0001 C CNN
 F 3 "~" H 5300 11050 50  0001 C CNN
 	1    5300 11050
 	0    1    1    0   
@@ -727,7 +564,7 @@ U 1 1 5FE9A55C
 P 5300 11350
 F 0 "R18" V 5093 11350 50  0000 C CNN
 F 1 "10" V 5184 11350 50  0000 C CNN
-F 2 "" V 5230 11350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 11350 50  0001 C CNN
 F 3 "~" H 5300 11350 50  0001 C CNN
 	1    5300 11350
 	0    1    1    0   
@@ -742,7 +579,7 @@ U 1 1 5FE9A564
 P 6200 10800
 F 0 "R16" V 5993 10800 50  0000 C CNN
 F 1 "1K" V 6084 10800 50  0000 C CNN
-F 2 "" V 6130 10800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 10800 50  0001 C CNN
 F 3 "~" H 6200 10800 50  0001 C CNN
 	1    6200 10800
 	0    1    1    0   
@@ -767,21 +604,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q11
 U 1 1 5FE9A57D
-P 5950 12600
-F 0 "Q11" H 6138 12653 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 12547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 12800 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 12900 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 13000 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 13100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 13200 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 13300 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 13400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 13500 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 13600 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 13700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 13800 60  0001 L CNN "Status"
-	1    5950 12600
+P 5950 11100
+F 0 "Q11" H 6138 11153 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 11047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 11300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 11400 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 11500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 11600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 11700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 11800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 11900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 12000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 12100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 12200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 12300 60  0001 L CNN "Status"
+	1    5950 11100
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -809,21 +646,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q12
 U 1 1 5FE9A598
-P 4850 12950
-F 0 "Q12" H 4958 13003 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 12897 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 13150 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 13250 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 13350 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 13450 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 13550 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 13650 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 13750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 13850 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 13950 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 14050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 14150 60  0001 L CNN "Status"
-	1    4850 12950
+P 4850 11450
+F 0 "Q12" H 4958 11503 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 11397 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 11650 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 11750 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 11850 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 11950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 12050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 12150 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 12250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 12350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 12450 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 12550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 12650 60  0001 L CNN "Status"
+	1    4850 11450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -834,7 +671,7 @@ U 1 1 5FE9A59F
 P 5300 12550
 F 0 "R20" V 5093 12550 50  0000 C CNN
 F 1 "1K" V 5184 12550 50  0000 C CNN
-F 2 "" V 5230 12550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 12550 50  0001 C CNN
 F 3 "~" H 5300 12550 50  0001 C CNN
 	1    5300 12550
 	0    1    1    0   
@@ -850,7 +687,7 @@ U 1 1 5FE9A5A8
 P 5300 12850
 F 0 "R21" V 5093 12850 50  0000 C CNN
 F 1 "10" V 5184 12850 50  0000 C CNN
-F 2 "" V 5230 12850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 12850 50  0001 C CNN
 F 3 "~" H 5300 12850 50  0001 C CNN
 	1    5300 12850
 	0    1    1    0   
@@ -865,7 +702,7 @@ U 1 1 5FE9A5B0
 P 6200 12300
 F 0 "R19" V 5993 12300 50  0000 C CNN
 F 1 "1K" V 6084 12300 50  0000 C CNN
-F 2 "" V 6130 12300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 12300 50  0001 C CNN
 F 3 "~" H 6200 12300 50  0001 C CNN
 	1    6200 12300
 	0    1    1    0   
@@ -890,21 +727,21 @@ Wire Wire Line
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q13
 U 1 1 5FF2C8DD
-P 5950 14100
-F 0 "Q13" H 6138 14153 60  0000 L CNN
-F 1 "MMBT2222A-7-F" H 6138 14047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6150 14300 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 14400 60  0001 L CNN
-F 4 "MMBT2222A-FDICT-ND" H 6150 14500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MMBT2222A-7-F" H 6150 14600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6150 14700 60  0001 L CNN "Category"
-F 7 "Transistors - Bipolar (BJT) - Single" H 6150 14800 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 14900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 15000 60  0001 L CNN "DK_Detail_Page"
-F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 15100 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 6150 15200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 15300 60  0001 L CNN "Status"
-	1    5950 14100
+P 5950 12600
+F 0 "Q13" H 6138 12653 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 12547 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 12800 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 12900 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 13000 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 13100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 13200 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 13300 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 13400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 13500 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 13600 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 13700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 13800 60  0001 L CNN "Status"
+	1    5950 12600
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -932,21 +769,21 @@ $EndComp
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q14
 U 1 1 5FF2C8F8
-P 4850 14450
-F 0 "Q14" H 4958 14503 60  0000 L CNN
-F 1 "IRLML6401TRPBF" H 4958 14397 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5050 14650 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 14750 60  0001 L CNN
-F 4 "IRLML6401PBFCT-ND" H 5050 14850 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6401TRPBF" H 5050 14950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5050 15050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5050 15150 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 15250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 15350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 15450 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 5050 15550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5050 15650 60  0001 L CNN "Status"
-	1    4850 14450
+P 4850 12950
+F 0 "Q14" H 4958 13003 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 12897 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 13150 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 13250 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 13350 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 13450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 13550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 13650 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 13750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 13850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 13950 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 14050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 14150 60  0001 L CNN "Status"
+	1    4850 12950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -957,7 +794,7 @@ U 1 1 5FF2C8FF
 P 5300 14050
 F 0 "R23" V 5093 14050 50  0000 C CNN
 F 1 "1K" V 5184 14050 50  0000 C CNN
-F 2 "" V 5230 14050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 14050 50  0001 C CNN
 F 3 "~" H 5300 14050 50  0001 C CNN
 	1    5300 14050
 	0    1    1    0   
@@ -973,7 +810,7 @@ U 1 1 5FF2C908
 P 5300 14350
 F 0 "R24" V 5093 14350 50  0000 C CNN
 F 1 "10" V 5184 14350 50  0000 C CNN
-F 2 "" V 5230 14350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 14350 50  0001 C CNN
 F 3 "~" H 5300 14350 50  0001 C CNN
 	1    5300 14350
 	0    1    1    0   
@@ -988,7 +825,7 @@ U 1 1 5FF2C910
 P 6200 13800
 F 0 "R22" V 5993 13800 50  0000 C CNN
 F 1 "1K" V 6084 13800 50  0000 C CNN
-F 2 "" V 6130 13800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 13800 50  0001 C CNN
 F 3 "~" H 6200 13800 50  0001 C CNN
 	1    6200 13800
 	0    1    1    0   
@@ -1017,8 +854,6 @@ Wire Wire Line
 Wire Wire Line
 	6550 6300 6350 6300
 Wire Wire Line
-	6650 3600 6650 7800
-Wire Wire Line
 	6650 7800 6350 7800
 Wire Wire Line
 	6350 9300 6750 9300
@@ -1036,8 +871,6 @@ Wire Wire Line
 	7050 4100 7050 13800
 Wire Wire Line
 	7050 13800 6350 13800
-Wire Wire Line
-	4850 4250 3800 4250
 Wire Wire Line
 	3800 4250 3800 2900
 Wire Wire Line
@@ -3906,8 +3739,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 3400 8050 3400
 Wire Wire Line
-	8050 3300 6350 3300
-Wire Wire Line
 	18600 3750 19050 3750
 Wire Wire Line
 	19050 3750 19050 4550
@@ -3967,4 +3798,173 @@ Wire Wire Line
 	10400 12100 10400 10750
 Wire Wire Line
 	10400 12100 10950 12100
+Wire Wire Line
+	6650 3600 6650 7800
+Wire Wire Line
+	8050 3300 6350 3300
+Wire Wire Line
+	4850 4250 3800 4250
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q2
+U 1 1 5FD98A09
+P 4850 3950
+F 0 "Q2" H 4958 4003 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 3897 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 4150 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 4250 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 4350 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 4450 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 4550 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 4650 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 4750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 4850 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 4950 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 5050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 5150 60  0001 L CNN "Status"
+	1    4850 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q1
+U 1 1 5FD989EE
+P 5950 3600
+F 0 "Q1" H 6138 3653 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 3547 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 3800 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 3900 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 4000 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 4100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 4200 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 4300 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 4400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 4500 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 4600 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 4700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 4800 60  0001 L CNN "Status"
+	1    5950 3600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5600 3700 5600 3850
+Connection ~ 5600 3700
+Wire Wire Line
+	5600 3700 5750 3700
+Wire Wire Line
+	5600 3550 5600 3700
+Wire Wire Line
+	6150 3700 6300 3700
+Wire Wire Line
+	6300 3700 6300 3850
+Wire Wire Line
+	5950 3300 6050 3300
+Wire Wire Line
+	5950 3400 5950 3300
+$Comp
+L Device:R R1
+U 1 1 5F736B11
+P 6200 3300
+F 0 "R1" V 5993 3300 50  0000 C CNN
+F 1 "1K" V 6084 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 3300 50  0001 C CNN
+F 3 "~" H 6200 3300 50  0001 C CNN
+	1    6200 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3550 5600 3550
+Wire Wire Line
+	5450 3850 5600 3850
+$Comp
+L Device:R R3
+U 1 1 5F1978E3
+P 5300 3850
+F 0 "R3" V 5093 3850 50  0000 C CNN
+F 1 "10" V 5184 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3850 50  0001 C CNN
+F 3 "~" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3550 4850 3750
+Connection ~ 4850 3550
+Wire Wire Line
+	4850 3550 5150 3550
+$Comp
+L Device:R R2
+U 1 1 5F15D9F6
+P 5300 3550
+F 0 "R2" V 5093 3550 50  0000 C CNN
+F 1 "1K" V 5184 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3550 50  0001 C CNN
+F 3 "~" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3500 4850 3550
+$Comp
+L power:GND #PWR020
+U 1 1 5F21DE8A
+P 6300 3850
+F 0 "#PWR020" H 6300 3600 50  0001 C CNN
+F 1 "GND" H 6305 3677 50  0000 C CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "" H 6300 3850 50  0001 C CNN
+	1    6300 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR019
+U 1 1 5F21DE97
+P 4850 3500
+F 0 "#PWR019" H 4850 3350 50  0001 C CNN
+F 1 "VCC" H 4867 3673 50  0000 C CNN
+F 2 "" H 4850 3500 50  0001 C CNN
+F 3 "" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4250 4850 4150
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT2222A-7-F Q15
+U 1 1 5F21DEAC
+P 5950 14100
+F 0 "Q15" H 6138 14153 60  0000 L CNN
+F 1 "MMBT2222A-7-F" H 6138 14047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6150 14300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 14400 60  0001 L CNN
+F 4 "MMBT2222A-FDICT-ND" H 6150 14500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT2222A-7-F" H 6150 14600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6150 14700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6150 14800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30041.pdf" H 6150 14900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT2222A-7-F/MMBT2222A-FDICT-ND/815723" H 6150 15000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.6A SMD SOT23-3" H 6150 15100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 6150 15200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 15300 60  0001 L CNN "Status"
+	1    5950 14100
+	0    -1   1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML6401TRPBF Q16
+U 1 1 5F21DE84
+P 4850 14450
+F 0 "Q16" H 4958 14503 60  0000 L CNN
+F 1 "IRLML6401TRPBF" H 4958 14397 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 5050 14650 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 14750 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5050 14850 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5050 14950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5050 15050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5050 15150 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5050 15250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5050 15350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5050 15450 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5050 15550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5050 15650 60  0001 L CNN "Status"
+	1    4850 14450
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

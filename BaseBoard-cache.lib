@@ -73,6 +73,32 @@ X G25 9 -750 100 300 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# BaseBoard_ICS-43434
+#
+DEF BaseBoard_ICS-43434 MK 0 40 Y Y 1 L N
+F0 "MK" -302 503 50 H V L BNN
+F1 "BaseBoard_ICS-43434" -302 -604 50 H V L BNN
+F2 "MIC_ICS-43434" 0 0 50 H I L BNN
+F3 "LGA-6 TDK-InvenSense" 0 0 50 H I L BNN
+F4 "ICS-43434" 0 0 50 H I L BNN
+F5 "2.43 USD" 0 0 50 H I L BNN
+F6 "TDK-InvenSense" 0 0 50 H I L BNN
+F7 "Multi-Mode Microphone with I2S Digital Output" 0 0 50 H I L BNN
+F8 "Bad" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -300 -500 -300 500 N
+P 2 0 0 10 -300 500 300 500 N
+P 2 0 0 10 300 -500 -300 -500 N
+P 2 0 0 10 300 500 300 -500 N
+X WS 1 -500 0 200 R 40 40 0 0 I
+X LR 2 -500 200 200 R 40 40 0 0 I
+X GND 3 500 -400 200 L 40 40 0 0 W
+X SCK 4 -500 -100 200 R 40 40 0 0 I
+X VDD 5 500 400 200 L 40 40 0 0 W
+X SD 6 -500 -200 200 R 40 40 0 0 O
+ENDDRAW
+ENDDEF
+#
 # BaseBoard_LED_Column
 #
 DEF BaseBoard_LED_Column COL 0 40 Y Y 1 F N
@@ -162,6 +188,35 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Terminal-Blocks-Wire-to-Board_OSTTC022162
+#
+DEF dk_Terminal-Blocks-Wire-to-Board_OSTTC022162 J 0 40 Y Y 1 F N
+F0 "J" -100 -50 50 H V R CNN
+F1 "dk_Terminal-Blocks-Wire-to-Board_OSTTC022162" 50 -200 50 H V C CNN
+F2 "digikey-footprints:Term_Block_1x2_P5.08MM" 200 200 60 H I L CNN
+F3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" 200 300 60 H I L CNN
+F4 "ED2609-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "OSTTC022162" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Terminal Blocks - Wire to Board" 200 700 60 H I L CNN "Family"
+F8 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TERM BLK 2P SIDE ENT 5.08MM PCB" 200 1000 60 H I L CNN "Description"
+F11 "On Shore Technology Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 -100 25 1 1 0 N
+C 100 -100 25 1 1 0 N
+S -50 0 150 -150 1 1 0 f
+P 2 1 1 0 0 -75 0 -125 N
+P 2 1 1 0 25 -100 -25 -100 N
+P 2 1 1 0 75 -100 125 -100 N
+P 2 1 1 0 100 -75 100 -125 N
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

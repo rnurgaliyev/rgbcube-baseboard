@@ -931,7 +931,6 @@ F 3 "https://cdn.shopify.com/s/files/1/1509/1638/files/ESP_-_32_NodeMCU_Developm
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8050 3200
-NoConn ~ 8050 2700
 NoConn ~ 8050 2800
 NoConn ~ 8050 2900
 NoConn ~ 8050 3000
@@ -3453,10 +3452,7 @@ NoConn ~ 9550 3400
 NoConn ~ 9550 3600
 NoConn ~ 9550 3700
 NoConn ~ 9550 3800
-NoConn ~ 9550 3900
 NoConn ~ 9550 4000
-NoConn ~ 9550 4100
-NoConn ~ 9550 4200
 NoConn ~ 9550 4300
 NoConn ~ 9550 4400
 NoConn ~ 9550 4500
@@ -3897,6 +3893,164 @@ F 1 "VCC" V 16517 13278 50  0000 L CNN
 F 2 "" H 16500 13150 50  0001 C CNN
 F 3 "" H 16500 13150 50  0001 C CNN
 	1    16500 13150
+	0    1    1    0   
+$EndComp
+$Comp
+L BaseBoard:ICS-43434 MK1
+U 1 1 5EBD0917
+P 8950 5900
+F 0 "MK1" H 8950 5233 50  0000 C CNN
+F 1 "ICS-43434" H 8950 5324 50  0000 C CNN
+F 2 "BaseBoard:MIC_ICS-43434" H 8950 5900 50  0001 L BNN
+F 3 "LGA-6 TDK-InvenSense" H 8950 5900 50  0001 L BNN
+F 4 "ICS-43434" H 8950 5900 50  0001 L BNN "Field4"
+F 5 "2.43 USD" H 8950 5900 50  0001 L BNN "Field5"
+F 6 "TDK-InvenSense" H 8950 5900 50  0001 L BNN "Field6"
+F 7 "Multi-Mode Microphone with I2S Digital Output" H 8950 5900 50  0001 L BNN "Field7"
+F 8 "Bad" H 8950 5900 50  0001 L BNN "Field8"
+	1    8950 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR086
+U 1 1 5EBD3D7E
+P 8450 5500
+F 0 "#PWR086" H 8450 5250 50  0001 C CNN
+F 1 "GND" H 8455 5327 50  0000 C CNN
+F 2 "" H 8450 5500 50  0001 C CNN
+F 3 "" H 8450 5500 50  0001 C CNN
+	1    8450 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2700 7400 2700
+Wire Wire Line
+	7400 2700 7400 6300
+Wire Wire Line
+	7400 6300 8300 6300
+$Comp
+L Device:C C17
+U 1 1 5EC0B891
+P 8300 6450
+F 0 "C17" H 8415 6496 50  0000 L CNN
+F 1 "0.1uF" H 8415 6405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8338 6300 50  0001 C CNN
+F 3 "~" H 8300 6450 50  0001 C CNN
+	1    8300 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 6300
+Wire Wire Line
+	8300 6300 8450 6300
+$Comp
+L power:GND #PWR085
+U 1 1 5EC0D5FC
+P 8300 6600
+F 0 "#PWR085" H 8300 6350 50  0001 C CNN
+F 1 "GND" H 8305 6427 50  0000 C CNN
+F 2 "" H 8300 6600 50  0001 C CNN
+F 3 "" H 8300 6600 50  0001 C CNN
+	1    8300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR087
+U 1 1 5EC0F842
+P 9450 6100
+F 0 "#PWR087" H 9450 5850 50  0001 C CNN
+F 1 "GND" H 9455 5927 50  0000 C CNN
+F 2 "" H 9450 6100 50  0001 C CNN
+F 3 "" H 9450 6100 50  0001 C CNN
+	1    9450 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4200 9650 4200
+Wire Wire Line
+	9650 4200 9650 4950
+Wire Wire Line
+	9650 5700 9450 5700
+Wire Wire Line
+	9550 4100 9750 4100
+Wire Wire Line
+	9750 4100 9750 5900
+Wire Wire Line
+	9750 5900 9450 5900
+Wire Wire Line
+	9550 3900 9850 3900
+Wire Wire Line
+	9850 3900 9850 5800
+Wire Wire Line
+	9850 5800 9450 5800
+$Comp
+L Device:R R41
+U 1 1 5ECC1E09
+P 9400 4950
+F 0 "R41" V 9300 4950 50  0000 C CNN
+F 1 "100K" V 9500 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9330 4950 50  0001 C CNN
+F 3 "~" H 9400 4950 50  0001 C CNN
+	1    9400 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 4950 9650 4950
+Connection ~ 9650 4950
+Wire Wire Line
+	9650 4950 9650 5700
+$Comp
+L power:GND #PWR088
+U 1 1 5ED309E4
+P 9100 4950
+F 0 "#PWR088" H 9100 4700 50  0001 C CNN
+F 1 "GND" H 9105 4777 50  0000 C CNN
+F 2 "" H 9100 4950 50  0001 C CNN
+F 3 "" H 9100 4950 50  0001 C CNN
+	1    9100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4950 9250 4950
+$Comp
+L dk_Terminal-Blocks-Wire-to-Board:OSTTC022162 J1
+U 1 1 5EDDABBD
+P 8500 8150
+F 0 "J1" V 8275 8133 50  0000 C CNN
+F 1 "OSTTC022162" V 8366 8133 50  0000 C CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 8700 8350 60  0001 L CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" H 8700 8450 60  0001 L CNN
+F 4 "ED2609-ND" H 8700 8550 60  0001 L CNN "Digi-Key_PN"
+F 5 "OSTTC022162" H 8700 8650 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 8700 8750 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 8700 8850 60  0001 L CNN "Family"
+F 8 "http://www.on-shore.com/wp-content/uploads/OSTTCXX2162.pdf" H 8700 8950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558" H 8700 9050 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2P SIDE ENT 5.08MM PCB" H 8700 9150 60  0001 L CNN "Description"
+F 11 "On Shore Technology Inc." H 8700 9250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8700 9350 60  0001 L CNN "Status"
+	1    8500 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR089
+U 1 1 5EDDE8BC
+P 8600 8150
+F 0 "#PWR089" H 8600 7900 50  0001 C CNN
+F 1 "GND" V 8605 8022 50  0000 R CNN
+F 2 "" H 8600 8150 50  0001 C CNN
+F 3 "" H 8600 8150 50  0001 C CNN
+	1    8600 8150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR090
+U 1 1 5EE165A0
+P 8600 8250
+F 0 "#PWR090" H 8600 8100 50  0001 C CNN
+F 1 "VCC" V 8617 8378 50  0000 L CNN
+F 2 "" H 8600 8250 50  0001 C CNN
+F 3 "" H 8600 8250 50  0001 C CNN
+	1    8600 8250
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC
